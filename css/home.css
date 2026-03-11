@@ -1,0 +1,214 @@
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+  padding: var(--space-3xl) 0 var(--space-4xl);
+  text-align: center;
+}
+
+.hero__content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero__badge {
+  margin-bottom: var(--space-lg);
+}
+
+.hero__title {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.hero__title-highlight {
+  color: var(--color-primary);
+}
+
+.hero__text {
+  font-size: var(--fs-md);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xl);
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .hero__actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: var(--space-4xl) 0;
+  }
+
+  .hero__title {
+    font-size: var(--fs-4xl);
+  }
+}
+
+/* Trust bar */
+.trust-bar {
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.trust-bar__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+  text-align: center;
+}
+
+.trust-bar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.trust-bar__icon {
+  font-size: var(--fs-2xl);
+  color: var(--color-primary);
+}
+
+.trust-bar__number {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--color-text);
+}
+
+.trust-bar__label {
+  font-size: var(--fs-sm);
+  color: var(--color-text-light);
+}
+
+@media (min-width: 768px) {
+  .trust-bar__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Featured products */
+.featured-products__grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.product-card__price {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+}
+
+.product-card__image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-4xl);
+  color: var(--color-primary);
+}
+
+@media (min-width: 576px) {
+  .featured-products__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .featured-products__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Why Duy-Mak */
+.why-us__grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.why-us__item {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+}
+
+.why-us__text h3 {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-xs);
+}
+
+.why-us__text p {
+  color: var(--color-text-light);
+  font-size: var(--fs-sm);
+}
+
+@media (min-width: 768px) {
+  .why-us__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Testimonials */
+.testimonials__grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* CTA Banner */
+.cta-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  padding: var(--space-3xl) 0;
+  text-align: center;
+  color: var(--color-text-inverse);
+}
+
+.cta-banner__title {
+  color: var(--color-text-inverse);
+  margin-bottom: var(--space-md);
+}
+
+.cta-banner__text {
+  font-size: var(--fs-md);
+  opacity: 0.9;
+  margin-bottom: var(--space-xl);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-banner .btn--primary {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.cta-banner .btn--primary:hover {
+  background-color: var(--color-secondary-dark);
+}

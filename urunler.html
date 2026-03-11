@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürünler | Duy-Mak İşitme Cihazları</title>
+  <meta name="description" content="Kulak arkası, kulak içi, kanal içi ve şarj edilebilir işitme cihazları. İhtiyacınıza en uygun modeli keşfedin.">
+
+  <meta property="og:title" content="Ürünler | Duy-Mak İşitme Cihazları">
+  <meta property="og:description" content="Kulak arkası, kulak içi, kanal içi ve şarj edilebilir işitme cihazları.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Ana içeriğe geç</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Duy-Mak Ana Sayfa">
+        <span class="header__logo-icon" aria-hidden="true">&#x1F442;</span>
+        Duy<span class="header__logo-highlight">-Mak</span>
+      </a>
+      <nav class="nav" aria-label="Ana menü">
+        <a href="index.html" class="nav__link">Ana Sayfa</a>
+        <a href="urunler.html" class="nav__link" aria-current="page">Ürünler</a>
+        <a href="hakkimizda.html" class="nav__link">Hakkımızda</a>
+        <a href="iletisim.html" class="nav__link">İletişim</a>
+        <a href="iletisim.html" class="btn btn--primary btn--small nav__cta">Randevu Al</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menüyü aç">
+        <span class="hamburger__line" aria-hidden="true"></span>
+        <span class="hamburger__line" aria-hidden="true"></span>
+        <span class="hamburger__line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobil menü">
+      <a href="index.html" class="mobile-nav__link">Ana Sayfa</a>
+      <a href="urunler.html" class="mobile-nav__link" aria-current="page">Ürünler</a>
+      <a href="hakkimizda.html" class="mobile-nav__link">Hakkımızda</a>
+      <a href="iletisim.html" class="mobile-nav__link">İletişim</a>
+      <div class="mobile-nav__cta">
+        <a href="iletisim.html" class="btn btn--primary btn--large">Randevu Al</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Ana Sayfa</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+          <span aria-current="page">Ürünler</span>
+        </nav>
+        <h1 class="page-header__title">İşitme Cihazları</h1>
+        <p class="page-header__desc">İhtiyacınıza en uygun işitme cihazını keşfedin. Tüm ürünlerimiz 2 yıl garantilidir.</p>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section">
+      <div class="container">
+        <!-- Filters -->
+        <div class="product-filters" role="group" aria-label="Ürün kategorileri">
+          <button class="filter-btn active" data-category="all" aria-pressed="true">Tümü</button>
+          <button class="filter-btn" data-category="kulak-ici" aria-pressed="false">Kulak İçi</button>
+          <button class="filter-btn" data-category="kulak-arkasi" aria-pressed="false">Kulak Arkası</button>
+          <button class="filter-btn" data-category="kanal-ici" aria-pressed="false">Kanal İçi</button>
+          <button class="filter-btn" data-category="sarj-edilebilir" aria-pressed="false">Şarj Edilebilir</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <article class="product-card" data-category="kulak-arkasi">
+            <div class="product-card__image-wrap" aria-hidden="true">
+              <span class="product-card__badge badge">Popüler</span>
+              &#x1F442;
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Kulak Arkası</span>
+              <h2 class="product-card__title">AcuSound Pro</h2>
+              <p class="product-card__desc">Güçlü amplifikasyon, Bluetooth bağlantısı ve gelişmiş gürültü azaltma teknolojisi.</p>
+              <div class="product-card__features">
+                <span class="product-card__feature">Bluetooth</span>
+                <span class="product-card__feature">Gürültü Engelleme</span>
+                <span class="product-card__feature">Su Geçirmez</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">Fiyat için arayın</span>
+                <a href="iletisim.html" class="btn btn--primary btn--small">Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card" data-category="kanal-ici">
+            <div class="product-card__image-wrap" aria-hidden="true">
+              <span class="product-card__badge badge badge--accent">Görünmez</span>
+              &#x1F442;
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Kanal İçi</span>
+              <h2 class="product-card__title">ClearHear Mini</h2>
+              <p class="product-card__desc">Neredeyse görünmez tasarım, doğal ses kalitesi ve uzun pil ömrü sunar.</p>
+              <div class="product-card__features">
+                <span class="product-card__feature">Görünmez</span>
+                <span class="product-card__feature">Doğal Ses</span>
+                <span class="product-card__feature">Uzun Pil</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">Fiyat için arayın</span>
+                <a href="iletisim.html" class="btn btn--primary btn--small">Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card" data-category="sarj-edilebilir">
+            <div class="product-card__image-wrap" aria-hidden="true">
+              <span class="product-card__badge badge badge--secondary">Şarj Edilebilir</span>
+              &#x1F50B;
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Şarj Edilebilir</span>
+              <h2 class="product-card__title">EcoCharge Plus</h2>
+              <p class="product-card__desc">24 saat pil ömrü, hızlı şarj ve akıllı telefon uygulaması ile kontrol.</p>
+              <div class="product-card__features">
+                <span class="product-card__feature">24 Saat Pil</span>
+                <span class="product-card__feature">Hızlı Şarj</span>
+                <span class="product-card__feature">Uygulama</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">Fiyat için arayın</span>
+                <a href="iletisim.html" class="btn btn--primary btn--small">Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card" data-category="kulak-ici">
+            <div class="product-card__image-wrap" aria-hidden="true">
+              &#x1F442;
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Kulak İçi</span>
+              <h2 class="product-card__title">SoundFit ITE</h2>
+              <p class="product-card__desc">Kulak içi özel kalıplı tasarım, kolay kullanım ve güçlü ses performansı.</p>
+              <div class="product-card__features">
+                <span class="product-card__feature">Özel Kalıp</span>
+                <span class="product-card__feature">Kolay Kullanım</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">Fiyat için arayın</span>
+                <a href="iletisim.html" class="btn btn--primary btn--small">Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card" data-category="kulak-arkasi">
+            <div class="product-card__image-wrap" aria-hidden="true">
+              <span class="product-card__badge badge badge--secondary">Yeni</span>
+              &#x1F442;
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Kulak Arkası</span>
+              <h2 class="product-card__title">PowerBTE Ultra</h2>
+              <p class="product-card__desc">İleri-çok ileri derece işitme kayıpları için güçlü amplifikasyon ve net ses.</p>
+              <div class="product-card__features">
+                <span class="product-card__feature">Süper Güçlü</span>
+                <span class="product-card__feature">Tinnitus Maskeleme</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">Fiyat için arayın</span>
+                <a href="iletisim.html" class="btn btn--primary btn--small">Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product-card" data-category="sarj-edilebilir">
+            <div class="product-card__image-wrap" aria-hidden="true">
+              &#x1F50B;
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Şarj Edilebilir</span>
+              <h2 class="product-card__title">GreenPower RIC</h2>
+              <p class="product-card__desc">Alıcı kanal içi şarj edilebilir model. Kompakt tasarım, üstün performans.</p>
+              <div class="product-card__features">
+                <span class="product-card__feature">RIC Tasarım</span>
+                <span class="product-card__feature">Şarj Edilebilir</span>
+                <span class="product-card__feature">Bluetooth</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">Fiyat için arayın</span>
+                <a href="iletisim.html" class="btn btn--primary btn--small">Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 7 -->
+          <article class="product-card" data-category="kulak-ici">
+            <div class="product-card__image-wrap" aria-hidden="true">
+              &#x1F442;
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Kulak İçi</span>
+              <h2 class="product-card__title">ComfortFit ITE</h2>
+              <p class="product-card__desc">Ergonomik kulak içi tasarım, gün boyu konfor ve otomatik ortam ayarı.</p>
+              <div class="product-card__features">
+                <span class="product-card__feature">Ergonomik</span>
+                <span class="product-card__feature">Otomatik Ayar</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">Fiyat için arayın</span>
+                <a href="iletisim.html" class="btn btn--primary btn--small">Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 8 -->
+          <article class="product-card" data-category="kanal-ici">
+            <div class="product-card__image-wrap" aria-hidden="true">
+              &#x1F442;
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Kanal İçi</span>
+              <h2 class="product-card__title">InvisoCIC Pro</h2>
+              <p class="product-card__desc">Tamamen kanal içi, dışarıdan görünmez. Hafif-orta derece işitme kayıpları için ideal.</p>
+              <div class="product-card__features">
+                <span class="product-card__feature">Tamamen Görünmez</span>
+                <span class="product-card__feature">Konforlu</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">Fiyat için arayın</span>
+                <a href="iletisim.html" class="btn btn--primary btn--small">Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 9 -->
+          <article class="product-card" data-category="kulak-arkasi">
+            <div class="product-card__image-wrap" aria-hidden="true">
+              &#x1F442;
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Kulak Arkası</span>
+              <h2 class="product-card__title">KidSound Junior</h2>
+              <p class="product-card__desc">Çocuklar için özel tasarlanmış, dayanıklı ve renkli kulak arkası model.</p>
+              <div class="product-card__features">
+                <span class="product-card__feature">Çocuklara Özel</span>
+                <span class="product-card__feature">Dayanıklı</span>
+                <span class="product-card__feature">Renkli</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">Fiyat için arayın</span>
+                <a href="iletisim.html" class="btn btn--primary btn--small">Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <p class="products-empty">Bu kategoride ürün bulunamadı.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guide -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Hangi Cihaz Size Uygun?</h2>
+        <p class="section__subtitle">Doğru işitme cihazını seçmek için bu adımları takip edin.</p>
+
+        <div class="guide">
+          <div class="guide__grid">
+            <div class="guide__item">
+              <span class="guide__number">1</span>
+              <div>
+                <h3>İşitme Testi Yaptırın</h3>
+                <p>Ücretsiz işitme testimizle işitme kaybınızın derecesini öğrenin.</p>
+              </div>
+            </div>
+            <div class="guide__item">
+              <span class="guide__number">2</span>
+              <div>
+                <h3>Uzmanla Görüşün</h3>
+                <p>Odyologumuz yaşam tarzınıza ve ihtiyaçlarınıza uygun modeli önersin.</p>
+              </div>
+            </div>
+            <div class="guide__item">
+              <span class="guide__number">3</span>
+              <div>
+                <h3>Deneme Süreci</h3>
+                <p>Cihazınızı günlük hayatta deneyin, gerekli ayarlamalar yapılsın.</p>
+              </div>
+            </div>
+            <div class="guide__item">
+              <span class="guide__number">4</span>
+              <div>
+                <h3>Sürekli Destek</h3>
+                <p>Düzenli kontrol ve bakım hizmeti ile her zaman yanınızdayız.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="section">
+      <div class="container brands">
+        <h2 class="section__title">Çalıştığımız Markalar</h2>
+        <p class="section__subtitle">Dünya lideri markalarla çalışıyoruz.</p>
+        <div class="brands__grid">
+          <span class="brands__item">Phonak</span>
+          <span class="brands__item">Oticon</span>
+          <span class="brands__item">Signia</span>
+          <span class="brands__item">ReSound</span>
+          <span class="brands__item">Widex</span>
+          <span class="brands__item">Starkey</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__col-title">Duy-Mak Hakkında</h3>
+          <p class="footer__about-text">25 yılı aşkın deneyimimizle işitme sağlığınız için en doğru çözümleri sunuyoruz.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">in</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Hızlı Bağlantılar</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Ana Sayfa</a></li>
+            <li><a href="urunler.html" class="footer__link">Ürünler</a></li>
+            <li><a href="hakkimizda.html" class="footer__link">Hakkımızda</a></li>
+            <li><a href="iletisim.html" class="footer__link">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Ürünler</h3>
+          <ul class="footer__links">
+            <li><a href="urunler.html" class="footer__link">Kulak Arkası</a></li>
+            <li><a href="urunler.html" class="footer__link">Kulak İçi</a></li>
+            <li><a href="urunler.html" class="footer__link">Kanal İçi</a></li>
+            <li><a href="urunler.html" class="footer__link">Şarj Edilebilir</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">İletişim</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x1F4CD;</span>
+            <span>Atatürk Bulvarı No: 123/4<br>Kızılay, Ankara</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x1F4DE;</span>
+            <span>0 (312) 123 45 67</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x2709;</span>
+            <span>info@duymak.com.tr</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Duy-Mak İşitme Cihazları. Tüm hakları saklıdır.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">KVKK Aydınlatma Metni</a>
+          <a href="#" class="footer__bottom-link">Gizlilik Politikası</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products-filter.js"></script>
+</body>
+</html>

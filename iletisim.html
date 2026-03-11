@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim | Duy-Mak İşitme Cihazları</title>
+  <meta name="description" content="Duy-Mak İşitme Cihazları ile iletişime geçin. Ücretsiz işitme testi için randevu alın veya sorularınızı iletin.">
+
+  <meta property="og:title" content="İletişim | Duy-Mak İşitme Cihazları">
+  <meta property="og:description" content="Ücretsiz işitme testi için randevu alın veya sorularınızı iletin.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Ana içeriğe geç</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Duy-Mak Ana Sayfa">
+        <span class="header__logo-icon" aria-hidden="true">&#x1F442;</span>
+        Duy<span class="header__logo-highlight">-Mak</span>
+      </a>
+      <nav class="nav" aria-label="Ana menü">
+        <a href="index.html" class="nav__link">Ana Sayfa</a>
+        <a href="urunler.html" class="nav__link">Ürünler</a>
+        <a href="hakkimizda.html" class="nav__link">Hakkımızda</a>
+        <a href="iletisim.html" class="nav__link" aria-current="page">İletişim</a>
+        <a href="iletisim.html" class="btn btn--primary btn--small nav__cta">Randevu Al</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menüyü aç">
+        <span class="hamburger__line" aria-hidden="true"></span>
+        <span class="hamburger__line" aria-hidden="true"></span>
+        <span class="hamburger__line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobil menü">
+      <a href="index.html" class="mobile-nav__link">Ana Sayfa</a>
+      <a href="urunler.html" class="mobile-nav__link">Ürünler</a>
+      <a href="hakkimizda.html" class="mobile-nav__link">Hakkımızda</a>
+      <a href="iletisim.html" class="mobile-nav__link" aria-current="page">İletişim</a>
+      <div class="mobile-nav__cta">
+        <a href="iletisim.html" class="btn btn--primary btn--large">Randevu Al</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Ana Sayfa</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+          <span aria-current="page">İletişim</span>
+        </nav>
+        <h1 class="page-header__title">İletişim</h1>
+        <p class="page-header__desc">Sorularınız veya randevu talepleriniz için bizimle iletişime geçin.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact__grid">
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h2>Bize Yazın</h2>
+
+            <div id="form-success" class="form-success" tabindex="-1" role="alert">
+              Mesajınız başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row form-row--2">
+                <div class="form-group">
+                  <label for="name" class="form-label form-label--required">Ad Soyad</label>
+                  <input type="text" id="name" name="name" class="form-input" autocomplete="name" aria-describedby="name-error" required>
+                  <p class="form-error" id="name-error" role="alert"></p>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label form-label--required">Telefon</label>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="0532 123 45 67" autocomplete="tel" aria-describedby="phone-error" required>
+                  <p class="form-error" id="phone-error" role="alert"></p>
+                </div>
+              </div>
+
+              <div class="form-row form-row--2">
+                <div class="form-group">
+                  <label for="email" class="form-label form-label--required">E-posta</label>
+                  <input type="email" id="email" name="email" class="form-input" autocomplete="email" aria-describedby="email-error" required>
+                  <p class="form-error" id="email-error" role="alert"></p>
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="form-label form-label--required">Konu</label>
+                  <select id="subject" name="subject" class="form-select" aria-describedby="subject-error" required>
+                    <option value="">Konu seçiniz...</option>
+                    <option value="randevu">Randevu Talebi</option>
+                    <option value="bilgi">Ürün Bilgisi</option>
+                    <option value="servis">Servis / Bakım</option>
+                    <option value="sikayet">Şikayet / Öneri</option>
+                    <option value="diger">Diğer</option>
+                  </select>
+                  <p class="form-error" id="subject-error" role="alert"></p>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label form-label--required">Mesajınız</label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" aria-describedby="message-error" required></textarea>
+                <p class="form-error" id="message-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="kvkk" name="kvkk" required>
+                  <label for="kvkk" class="form-label">
+                    <a href="#" style="color: var(--color-primary); text-decoration: underline;">KVKK Aydınlatma Metni</a>'ni okudum ve kişisel verilerimin işlenmesini kabul ediyorum. <span style="color: var(--color-error);">*</span>
+                  </label>
+                </div>
+                <p class="form-error" id="kvkk-error" role="alert"></p>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--large">Mesaj Gönder</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="contact-info__card">
+              <h3>İletişim Bilgileri</h3>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">&#x1F4CD;</div>
+                <div>
+                  <div class="contact-info__label">Adres</div>
+                  <div class="contact-info__value">Atatürk Bulvarı No: 123/4<br>Kızılay, Çankaya / Ankara</div>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">&#x1F4DE;</div>
+                <div>
+                  <div class="contact-info__label">Telefon</div>
+                  <div class="contact-info__value"><a href="tel:+903121234567">0 (312) 123 45 67</a></div>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">&#x2709;&#xFE0F;</div>
+                <div>
+                  <div class="contact-info__label">E-posta</div>
+                  <div class="contact-info__value"><a href="mailto:info@duymak.com.tr">info@duymak.com.tr</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info__card">
+              <h3>Çalışma Saatleri</h3>
+              <div class="hours__list">
+                <div class="hours__row">
+                  <span class="hours__day">Pazartesi - Cuma</span>
+                  <span class="hours__time">09:00 - 18:00</span>
+                </div>
+                <div class="hours__row">
+                  <span class="hours__day">Cumartesi</span>
+                  <span class="hours__time">09:00 - 14:00</span>
+                </div>
+                <div class="hours__row">
+                  <span class="hours__day">Pazar</span>
+                  <span class="hours__closed">Kapalı</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder" aria-label="Harita">
+          <span class="map-placeholder__icon" aria-hidden="true">&#x1F5FA;&#xFE0F;</span>
+          <p>Harita burada görüntülenecek</p>
+          <p style="font-size: var(--fs-xs);">Atatürk Bulvarı No: 123/4, Kızılay, Ankara</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__col-title">Duy-Mak Hakkında</h3>
+          <p class="footer__about-text">25 yılı aşkın deneyimimizle işitme sağlığınız için en doğru çözümleri sunuyoruz.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">in</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Hızlı Bağlantılar</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Ana Sayfa</a></li>
+            <li><a href="urunler.html" class="footer__link">Ürünler</a></li>
+            <li><a href="hakkimizda.html" class="footer__link">Hakkımızda</a></li>
+            <li><a href="iletisim.html" class="footer__link">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Ürünler</h3>
+          <ul class="footer__links">
+            <li><a href="urunler.html" class="footer__link">Kulak Arkası</a></li>
+            <li><a href="urunler.html" class="footer__link">Kulak İçi</a></li>
+            <li><a href="urunler.html" class="footer__link">Kanal İçi</a></li>
+            <li><a href="urunler.html" class="footer__link">Şarj Edilebilir</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">İletişim</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x1F4CD;</span>
+            <span>Atatürk Bulvarı No: 123/4<br>Kızılay, Ankara</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x1F4DE;</span>
+            <span>0 (312) 123 45 67</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x2709;</span>
+            <span>info@duymak.com.tr</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Duy-Mak İşitme Cihazları. Tüm hakları saklıdır.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">KVKK Aydınlatma Metni</a>
+          <a href="#" class="footer__bottom-link">Gizlilik Politikası</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>
